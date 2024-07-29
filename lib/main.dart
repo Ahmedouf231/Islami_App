@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var provider = Provider.of<AppConfigprovider>(context);
-    return MaterialApp(
+    return MaterialApp( 
+      debugShowCheckedModeBanner: false,
       initialRoute: Homescreen.routeName,
       theme: MyThemeDate.lightTheme,
       darkTheme: MyThemeDate.darkTheme,   
